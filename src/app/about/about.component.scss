@@ -1,0 +1,132 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Utilisation d'une police moderne */
+  margin: 0;
+  padding: 0;
+  background-color: beige; /* Couleur d'arrière-plan légèrement grise */
+  color: #333;
+}
+
+.about-me {
+  max-width: 1100px;
+  margin: 50px auto;
+  background-color: #fff; /* Couleur de fond blanche */
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Léger effet d'ombre */
+  border-radius: 10px;
+}
+
+.about-me h1 {
+  font-size: 3rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center; /* Centrer le titre */
+  font-weight: 700;
+}
+
+.about-me p {
+  font-size: 1.3rem;
+  line-height: 1.8; /* Espacement entre les lignes pour plus de lisibilité */
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+nav ul {
+  list-style-type: none; /* Suppression des puces */
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-size: 1.6rem;
+  text-decoration: none; /* Suppression du soulignement */
+  color: #333;
+  padding-bottom: 5px;
+  border-bottom: 2px solid transparent; /* Bordure transparente par défaut */
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+nav ul li a:hover, nav ul li a.active {
+  color: #f25252; /* Couleur rouge lors du survol */
+  border-bottom: 2px solid #f25252; /* Bordure rouge lors du survol */
+}
+
+.content-section {
+  margin-top: 20px;
+}
+
+.content-section ul {
+  list-style-type: none; /* Suppression des puces dans la liste */
+  padding: 0;
+}
+
+.content-section ul li {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  position: relative; /* Pour le style de la puce personnalisée */
+  padding-left: 20px; /* Indentation pour l'icône */
+}
+/* Style personnalisé pour les puces */
+.content-section ul li::before {
+  color: #f25252;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.content-section ul li span {
+  color: #f25252;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Responsiveness - Mobile */
+@media (max-width: 768px) {
+  .about-me {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  nav ul {
+    flex-direction: column; /* Les onglets passent en colonne sur mobile */
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 10px; /* Espacement entre les onglets sur mobile */
+  }
+
+  .about-me h1 {
+    font-size: 2.5rem;
+  }
+}
+
+.presentation {
+  font-family: "Georgia", serif; /* Typographie plus formelle pour la présentation */
+  font-size: 18px;
+  color: #333; /* Texte plus sombre */
+}
+
+.skills-experience {
+  font-family: "Arial", sans-serif; /* Typographie moderne pour les compétences */
+  font-size: 16px;
+  color: #555; /* Texte plus clair */
+}
+
+.separator {
+  border-top: 2px solid #ccc;
+  margin: 40px 0;
+}
+
+.discription {
+  padding: 20px; /* Espace interne pour la partie Skills */
+  background-color: #f9f9f9; /* Arrière-plan différent pour les skills */
+  border-radius: 10px; /* Bords arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
