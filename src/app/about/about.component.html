@@ -1,147 +1,192 @@
 <div class="">
   <div class="about-me">
     <div class="presentation">
-    <h1>About me</h1>
-    <p>I am a dedicated Backend Developer with a few years of experience, specializing in Java and Angular technologies.<br>
-      Throughout my career, I have successfully contributed to both from-scratch development and migration projects across various industries, including finance, real estate, and the military (South Korea).<br>
-      
-      I have worked at software companies, providing high-quality solutions for complex systems.<br>
-      My role in these organizations has involved collaborating with cross-functional teams and participating in the development of web applications.<br>
-      
-      I am always eager to embrace new challenges and contribute to impactful projects in dynamic environments.</p>
+      <h1>About me</h1>
+      <p>
+        I am a dedicated Backend Developer with a few years of experience,
+        specializing in Java and Angular technologies.<br />
+        Throughout my career, I have successfully contributed to both
+        from-scratch development and migration projects across various
+        industries, including finance, real estate, and the military (South
+        Korea).<br />
+
+        I have worked at software companies, providing high-quality solutions
+        for complex systems.<br />
+        My role in these organizations has involved collaborating with
+        cross-functional teams and participating in the development of web
+        applications.<br />
+
+        I am always eager to embrace new challenges and contribute to impactful
+        projects in dynamic environments.
+      </p>
     </div>
-    <div class="separator"></div>  
+    <div class="separator"></div>
     <div class="skills-experience">
-    <nav>
-      <ul>
-        <li><a (click)="selectTab('skills')" [class.active]="selectedTab === 'skills'">Skills</a></li>
-        <li><a (click)="selectTab('experience')" [class.active]="selectedTab === 'experience'">Experience</a></li>
-        <li><a (click)="selectTab('education')" [class.active]="selectedTab === 'education'">Education</a></li>
-      </ul>
-    </nav>
-    @if (selectedTab === 'skills') {
+      <nav>
+        <ul>
+          <li>
+            <a
+              (click)="selectTab('skills')"
+              [class.active]="selectedTab === 'skills'"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              (click)="selectTab('experience')"
+              [class.active]="selectedTab === 'experience'"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a
+              (click)="selectTab('education')"
+              [class.active]="selectedTab === 'education'"
+              >Education</a
+            >
+          </li>
+        </ul>
+      </nav>
+      @if (selectedTab === 'skills') {
       <div class="content-section">
         <ul class="skill-list">
           <li>
-            <div class="card card-sm" style="background-color: hsl(19, 97%, 85%)">
-
+            <div
+              class="card card-sm"
+              style="background-color: hsl(19, 97%, 85%)"
+            >
               <div class="card-media">
                 <ion-icon src="assets/images/java.svg"></ion-icon>
               </div>
 
               <h2 class="card-title"><strong>JAVA</strong></h2>
-
             </div>
           </li>
           <li>
-            <div class="card card-sm" style="background-color: hsl(76, 39%, 72%)">
-
+            <div
+              class="card card-sm"
+              style="background-color: hsl(76, 39%, 72%)"
+            >
               <div class="card-media">
                 <ion-icon src="assets/images/spring-3.svg"></ion-icon>
               </div>
 
               <h2 class="card-title"><strong>SPRING</strong></h2>
-
             </div>
           </li>
           <li>
-            <div class="card card-sm" style="background-color: hsl(177, 39%, 72%)">
-
+            <div
+              class="card card-sm"
+              style="background-color: hsl(177, 39%, 72%)"
+            >
               <div class="card-media">
                 <ion-icon src="assets/images/sqls.svg"></ion-icon>
               </div>
 
               <h2 class="card-title"><strong>SQL</strong></h2>
-
             </div>
           </li>
-          
-          <li>
-            <div class="card card-sm" style="background-color: hsl(325, 91%, 87%)">
 
+          <li>
+            <div
+              class="card card-sm"
+              style="background-color: hsl(325, 91%, 87%)"
+            >
               <div class="card-media">
                 <ion-icon name="logo-angular"></ion-icon>
               </div>
 
               <h2 class="card-title"><strong>Angular</strong></h2>
-
             </div>
           </li>
           <li>
-            <div class="card card-sm" style="background-color: hsl(177, 39%, 72%)">
-
+            <div
+              class="card card-sm"
+              style="background-color: hsl(177, 39%, 72%)"
+            >
               <div class="card-media">
                 <ion-icon name="logo-html5"></ion-icon>
               </div>
 
               <h2 class="card-title"><strong>HTML</strong></h2>
-
             </div>
           </li>
 
           <li>
-            <div class="card card-sm" style="background-color: hsl(128, 64%, 71%)">
-
+            <div
+              class="card card-sm"
+              style="background-color: hsl(128, 64%, 71%)"
+            >
               <div class="card-media">
                 <ion-icon name="logo-css3"></ion-icon>
               </div>
 
               <h2 class="card-title"><strong>CSS</strong></h2>
-
             </div>
-          </li> 
+          </li>
 
-          
           <li>
-            <div class="card card-sm" style="background-color: hsl(41, 91%, 71%)">
-
+            <div
+              class="card card-sm"
+              style="background-color: hsl(41, 91%, 71%)"
+            >
               <div class="card-media">
                 <ion-icon src="assets/images/javascript-1.svg"></ion-icon>
               </div>
 
               <h2 class="card-title">JavaScript</h2>
-
             </div>
           </li>
           <li>
-            <div class="card card-sm" style="background-color: hsl(245, 100%, 90%)">
-
+            <div
+              class="card card-sm"
+              style="background-color: hsl(245, 100%, 90%)"
+            >
               <div class="card-media">
                 <ion-icon name="logo-android"></ion-icon>
               </div>
 
               <h2 class="card-title">...</h2>
-
             </div>
           </li>
-
         </ul>
       </div>
-    } @else if (selectedTab === 'experience') {
+      } @else if (selectedTab === 'experience') {
       <div class="content-section">
         <ul>
           <li>
-            <div class="discription" style="background-color: hsl(30, 20%, 95%)">
+            <div
+              class="discription"
+              style="background-color: hsl(30, 20%, 95%)"
+            >
               <ul>
-                <li><span>2024 - Current</span>Backend Developer Java/Spring/JSP at PATC - 피에이티씨(주).</li> 
-                <li><span>2023 - 2024</span>Fullstack Developer .NET at TNS - TN Solution.</li>
+                <li>
+                  <span>May 2024 - Present</span>Backend Developer
+                  Java/Spring/JSP at PATC - 피에이티씨(주).
+                </li>
+                <li>
+                  <span>January 2024 - April 2024</span>Web Developer .NET at
+                  TNS - TN Solution.
+                </li>
               </ul>
             </div>
           </li>
         </ul>
       </div>
-    } @else if (selectedTab === 'education') {
+      } @else if (selectedTab === 'education') {
       <div class="content-section">
         <ul>
           <div class="discription" style="background-color: hsl(30, 20%, 95%)">
-            <ul> 
-              <li><span>2020 - 2024</span>Good Student at Hong Bang International University...</li>
+            <ul>
+              <li>
+                <span>2020 - 2024</span>Good Student at Hong Bang International
+                University...
+              </li>
             </ul>
           </div>
         </ul>
       </div>
-    }
+      }
     </div>
   </div>
 </div>
-

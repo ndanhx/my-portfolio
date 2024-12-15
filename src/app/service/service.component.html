@@ -1,81 +1,310 @@
 <main>
   <article>
-
-    <!--
-      - #SERVICE
-    -->
-
-    <section class="section service has-bg-image" aria-labelledby="service-label"
-             style="background-image: url('assets/images/service-bg.png')">
+    <section
+      class="section projects has-bg-image"
+      aria-labelledby="projects-label"
+      style="background-image: url('assets/images/projects-bg.png')"
+    >
       <div class="container">
+        <h2 class="section-title headline-md text-center" id="projects-label">
+          My Projects
+        </h2>
 
-        <h2 class="section-title headline-md text-center" id="service-label">My Services</h2>
-
-        <ul class="service-list">
-
-          <li class="card-container">
-            <div class="card card-md" style="background-color: hsl(221, 100%, 79%)">
-
-              <div class="card-media">
-                <ion-icon name="shapes-outline" aria-hidden="true"></ion-icon>
+        <ul class="projects-list" style="list-style: none; padding: 0">
+          <li class="card-container" style="margin-bottom: 2rem">
+            <div
+              class="card card-md"
+              style="
+                background-color: hsl(220, 78%, 91%);
+                padding: 1.5rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <div class="card-media" style="margin-bottom: 1rem">
+                <ion-icon
+                  name="bag-outline"
+                  aria-hidden="true"
+                  style="font-size: 2rem"
+                ></ion-icon>
               </div>
 
               <div>
-                <h3 class="card-title title-sm">Web Design & Frontend Development</h3>
+                <h3 class="card-title title-sm" style="margin-bottom: 1rem">
+                  Ecommerce Basic Website
+                </h3>
 
-                <p class="body-sm">
-                  I specialize in creating responsive, user-friendly web interfaces using the latest front-end technologies. My goal is to ensure that your web application not only looks great but also offers a seamless user experience across all devices.<br/>
-
-                  I ensure that every design is tailored to meet your business needs, aligning aesthetics with functionality for a great user experience.
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Duration:</strong> December 2023 - January 2024
+                  (Self-study)
                 </p>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Description:</strong> Built an e-commerce platform
+                  using <b>Angular</b> for the frontend and
+                  <b>Spring Boot</b> for the backend. This project focuses on
+                  creating a user-friendly shopping experience with advanced
+                  features like order tracking and user management.
+                </p>
+                <p class="body-sm" style="margin-bottom: 0.5rem">
+                  <strong>Responsibilities:</strong>
+                </p>
+                <ul
+                  style="
+                    margin-bottom: 1rem;
+                    padding-left: 1.5rem;
+                    color: black;
+                  "
+                >
+                  <li>
+                    Implemented CRUD operations for seamless product data
+                    management.
+                  </li>
+                  <li>
+                    Designed and developed shopping cart, wishlist, and coupon
+                    systems.
+                  </li>
+                  <li>
+                    Integrated real-time order tracking with unique tracking
+                    IDs.
+                  </li>
+                  <li>
+                    Built secure user authentication and account management
+                    functionalities.
+                  </li>
+                </ul>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Technologies: </strong> <b>Java</b>,
+                  <b>Angular 16</b>, <b>Spring Boot</b>, <b>Spring Security</b>,
+                  <b>Material-UI</b>, <b>MySQL</b>
+                </p>
+                <a
+                  href="https://github.com/ndanhx/ecommerce-springboot-angular-basic"
+                  target="_blank"
+                  style="
+                    color: hsl(221, 80%, 30%);
+                    text-decoration: none;
+                    font-weight: bold;
+                  "
+                  >View on GitHub</a
+                >
               </div>
-
             </div>
           </li>
 
-          <li class="card-container">
-            <div class="card card-md" style="background-color: hsl(76, 39%, 72%)">
-
-              <div class="card-media">
-                <ion-icon name="code-slash-outline" aria-hidden="true"></ion-icon>
+          <li class="card-container" style="margin-bottom: 2rem">
+            <div
+              class="card card-md"
+              style="
+                background-color: hsl(75, 67%, 88%);
+                padding: 1.5rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <div class="card-media" style="margin-bottom: 1rem">
+                <ion-icon
+                  name="home-outline"
+                  aria-hidden="true"
+                  style="font-size: 2rem"
+                ></ion-icon>
               </div>
 
               <div>
-                <h3 class="card-title title-sm">Backend & Full-Stack Development</h3>
+                <h3 class="card-title title-sm" style="margin-bottom: 1rem">
+                  Apartment Rental Listing Website
+                </h3>
 
-                <p class="body-sm">
-                  In addition to web design, I offer robust backend development using Java. With a focus on creating scalable and efficient solutions, I can handle everything from complex data processing tasks to building entire back-end architectures.<br/>
-                  I offer end-to-end development solutions that cover all aspects of a web project—from designing the user interface to implementing powerful backend logic and database management.
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Duration:</strong> August 2023 - October 2023 (Solo
+                  developer)
                 </p>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Description:</strong> Developed a platform for users
+                  to list and search apartment rentals, offering robust features
+                  like role-based access and payment integration.
+                </p>
+                <p class="body-sm" style="margin-bottom: 0.5rem">
+                  <strong>Responsibilities:</strong>
+                </p>
+                <ul
+                  style="
+                    margin-bottom: 1rem;
+                    padding-left: 1.5rem;
+                    color: black;
+                  "
+                >
+                  <li>
+                    Created user interfaces with <b>Angular 10</b> and
+                    <b>Bootstrap</b>.
+                  </li>
+                  <li>
+                    Designed RESTful APIs in <b>Java</b> using <b>JDBC</b> for
+                    backend logic.
+                  </li>
+                  <li>
+                    Implemented user roles: tenant, landlord, moderator, and
+                    admin.
+                  </li>
+                  <li>
+                    Integrated <b>Vnpay</b> payment gateway for seamless online
+                    payments.
+                  </li>
+                </ul>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Technologies: </strong> <b>Java</b>, <b>J2EE</b>,
+                  <b>Angular</b>, <b>MySQL</b>
+                </p>
+                <a
+                  href="https://github.com/ndanhx/project-angular"
+                  target="_blank"
+                  style="
+                    color: hsl(76, 60%, 30%);
+                    text-decoration: none;
+                    font-weight: bold;
+                  "
+                  >View on GitHub</a
+                >
               </div>
-
             </div>
           </li>
 
+          <li class="card-container" style="margin-bottom: 2rem">
+            <div
+              class="card card-md"
+              style="
+                background-color: hsl(202, 63%, 87%);
+                padding: 1.5rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <div class="card-media" style="margin-bottom: 1rem">
+                <ion-icon
+                  name="fish-outline"
+                  aria-hidden="true"
+                  style="font-size: 2rem"
+                ></ion-icon>
+              </div>
 
+              <div>
+                <h3 class="card-title title-sm" style="margin-bottom: 1rem">
+                  Seafood Shop Website
+                </h3>
+
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Duration:</strong> July 2023 - August 2023
+                  (Self-study)
+                </p>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Description:</strong> Designed and built an e-commerce
+                  site for a seafood store with comprehensive product and user
+                  management features.
+                </p>
+                <p class="body-sm" style="margin-bottom: 0.5rem">
+                  <strong>Responsibilities:</strong>
+                </p>
+                <ul
+                  style="
+                    margin-bottom: 1rem;
+                    padding-left: 1.5rem;
+                    color: black;
+                  "
+                >
+                  <li>
+                    Implemented CRUD functionalities for efficient product
+                    management.
+                  </li>
+                  <li>Developed a user-friendly shopping cart system.</li>
+                  <li>
+                    Ensured platform security through user authentication
+                    features.
+                  </li>
+                </ul>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Technologies: </strong> <b>Java</b>,
+                  <b>Spring Boot</b>, <b>Thymeleaf</b>,
+                  <b>MySQL</b>
+                </p>
+                <a
+                  href="https://github.com/ndanhx/ecommerce-springboot"
+                  target="_blank"
+                  style="
+                    color: hsl(201, 80%, 30%);
+                    text-decoration: none;
+                    font-weight: bold;
+                  "
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </li>
+
+          <li class="card-container" style="margin-bottom: 2rem">
+            <div
+              class="card card-md"
+              style="
+                background-color: hsl(146, 68%, 84%);
+                padding: 1.5rem;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+              "
+            >
+              <div class="card-media" style="margin-bottom: 1rem">
+                <ion-icon
+                  name="book-outline"
+                  aria-hidden="true"
+                  style="font-size: 2rem"
+                ></ion-icon>
+              </div>
+
+              <div>
+                <h3 class="card-title title-sm" style="margin-bottom: 1rem">
+                  Library Management Application
+                </h3>
+
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Duration:</strong> November 2023 - December 2022
+                  (Leader)
+                </p>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Description:</strong> Led the development of a library
+                  management system to assist librarians in organizing book
+                  inventories and streamlining borrowing processes.
+                </p>
+                <p class="body-sm" style="margin-bottom: 0.5rem">
+                  <strong>Responsibilities:</strong>
+                </p>
+                <ul
+                  style="
+                    margin-bottom: 1rem;
+                    padding-left: 1.5rem;
+                    color: black;
+                  "
+                >
+                  <li>
+                    Designed database schema and implemented SQL triggers.
+                  </li>
+                  <li>
+                    Created functionalities for adding, deleting, and updating
+                    records.
+                  </li>
+                  <li>Developed robust book lending and returning modules.</li>
+                </ul>
+                <p class="body-sm" style="margin-bottom: 1rem">
+                  <strong>Technologies: </strong> <b>Java</b>, <b>JDBC</b>,
+                  <b>SQL Server</b>, <b>Swing</b>
+                </p>
+                <a
+                  href="https://github.com/ndanhx/library-management-java-swing"
+                  target="_blank"
+                  style="
+                    color: hsl(145, 80%, 30%);
+                    text-decoration: none;
+                    font-weight: bold;
+                  "
+                  >View on GitHub</a
+                >
+              </div>
+            </div>
+          </li>
         </ul>
-        <div class="card-container container-chose">
-          <div class="card card-md" style="background-color: beige">
-
-            <div class="card-media">
-              <ion-icon name="help-outline" aria-hidden="true"></ion-icon>
-            </div>
-
-            <div>
-              <h3 class="card-title title-sm">Why Choose My Services?</h3>
-
-              <p class="body-sm">
-                <span style="font-weight: bold">Versatility:</span> I work with a wide range of technologies to meet your unique business needs.<br/>
-                <span style="font-weight: bold">Expertise:</span> With years of experience in web design and backend development, I provide high-quality solutions.<br/>
-                <span style="font-weight: bold">Efficiency:</span> I deliver reliable, scalable, and performance-driven web applications that align with your goals.<br/>
-              </p>
-            </div>
-
-          </div>
-        </div>
-
       </div>
     </section>
-
   </article>
 </main>

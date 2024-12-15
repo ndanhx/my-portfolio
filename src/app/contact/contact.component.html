@@ -1,83 +1,119 @@
 <main>
   <article>
-
     <!--
       - #CONTACT
     -->
 
-    <section class="section contact has-bg-image" aria-labelledby="contact-label"
-             style="background-image: url('./assets/images/contact-bg.png')">
+    <section
+      class="section contact has-bg-image"
+      aria-labelledby="contact-label"
+      style="background-image: url('./assets/images/contact-bg.png')"
+    >
       <div class="container">
-
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="contact-form">
-
+        <form
+          [formGroup]="contactForm"
+          (ngSubmit)="onSubmit()"
+          class="contact-form"
+        >
           <h2 class="headline-sm" id="contact-label">Get in touch</h2>
 
-          <p class="contact-text body-md">
-            I would love to hear from you.
-          </p>
+          <p class="contact-text body-md">I would love to hear from you.</p>
 
           <div class="wrapper">
-
             <div>
               <label for="name" class="label">First name</label>
 
-              <input type="text" name="name" id="name" placeholder="Name *" formControlName="nom" required class="input-field">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name *"
+                formControlName="nom"
+                required
+                class="input-field"
+              />
             </div>
 
             <div>
               <label for="email" class="label">Your Email </label>
 
-              <input type="email" name="email" id="email" placeholder="Email *" formControlName="mail" required class="input-field">
-              @if ((primEmail?.invalid && !primEmail?.untouched) || primEmail?.dirty){
-                <div class="block-small">
-                  @if (primEmail?.errors?.['required']){
-                    <small class="text-danger">Email is required</small>
-                  }
-                  @if (primEmail?.errors?.['pattern']){
-                    <small class="text-danger">Please provide a valid email address</small>
-                  }
-                </div>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email *"
+                formControlName="mail"
+                required
+                class="input-field"
+              />
+              @if ((primEmail?.invalid && !primEmail?.untouched) ||
+              primEmail?.dirty){
+              <div class="block-small">
+                @if (primEmail?.errors?.['required']){
+                <small class="text-danger">Email is required</small>
+                } @if (primEmail?.errors?.['pattern']){
+                <small class="text-danger"
+                  >Please provide a valid email address</small
+                >
+                }
+              </div>
               }
-
             </div>
-
           </div>
 
           <label for="subject" class="label">Subject</label>
-          <input type="text" name="subject" id="subject" placeholder="Subject *" formControlName="sujet" required class="input-field">
+          <input
+            type="text"
+            name="subject"
+            id="subject"
+            placeholder="Subject *"
+            formControlName="sujet"
+            required
+            class="input-field"
+          />
 
           <label for="message" class="label">Your message </label>
-          <textarea name="message" id="message" placeholder="Your message *" formControlName="message" required class="input-field"></textarea>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your message *"
+            formControlName="message"
+            required
+            class="input-field"
+          ></textarea>
 
-          <button type="submit" class="btn btn-tertiary" [disabled]="contactForm.invalid">Send Message</button>
+          <button
+            type="submit"
+            class="btn btn-tertiary"
+            [disabled]="contactForm.invalid"
+          >
+            Send Message
+          </button>
 
           <!-- Message de succès -->
           @if (emailSent){
-            <div class="alert alert-success" role="alert">
-              Email sent successfully!
-            </div>
+          <div class="alert alert-success" role="alert">
+            Email sent successfully!
+          </div>
           }
-
 
           <!-- Message d'erreur -->
           @if (emailEchec){
-            <div class="alert alert-danger" role="alert">
-              Failed to send the email. Please try again later. <br>
-              Alternatively, you can contact me directly via phone or email. <br>
-            </div>
+          <div class="alert alert-danger" role="alert">
+            Failed to send the email. Please try again later. <br />
+            Alternatively, you can contact me directly via phone or email.
+            <br />
+          </div>
           }
-
-
         </form>
 
         <div class="contact-content">
-
           <ul class="contact-list">
-
             <li class="contact-item">
-
-              <div class="item-icon" style="background-color: hsl(177, 39%, 72%)">
+              <div
+                class="item-icon"
+                style="background-color: hsl(177, 39%, 72%)"
+              >
                 <ion-icon name="call" aria-hidden="true"></ion-icon>
               </div>
 
@@ -86,47 +122,125 @@
 
                 <a href="tel:+212602330178" class="body-lg">+84 868 888 548</a>
               </div>
-
             </li>
 
             <li class="contact-item">
-
-              <div class="item-icon" style="background-color: hsl(41, 99%, 64%)">
+              <div
+                class="item-icon"
+                style="background-color: hsl(41, 99%, 64%)"
+              >
                 <ion-icon name="mail" aria-hidden="true"></ion-icon>
               </div>
 
               <div>
                 <p class="label-lg">Mail</p>
 
-                <a href="mailto:ndanhx@gmail.com" class="body-lg">ndanhx&#64;gmail.com</a>
+                <a href="mailto:ndanhx@gmail.com" class="body-lg"
+                  >ndanhx&#64;gmail.com</a
+                >
               </div>
-
             </li>
 
             <li class="contact-item">
-
-              <div class="item-icon" style="background-color: hsl(19, 97%, 85%)">
+              <div
+                class="item-icon"
+                style="background-color: hsl(19, 97%, 85%)"
+              >
                 <ion-icon name="location" aria-hidden="true"></ion-icon>
               </div>
 
               <div>
                 <p class="label-lg">ADDRESS</p>
 
-                <address class="body-lg">
-                 
-                  Ho Chi Minh City,
-                  Vietnam
-                </address>
+                <address class="body-lg">Ho Chi Minh City, Vietnam</address>
+              </div>
+            </li>
+            <li class="contact-item">
+              <div
+                class="item-icon"
+                style="
+                  background-color: hsl(214, 89%, 78%);
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fab fa-facebook-f"
+                  aria-hidden="true"
+                  style="font-size: 1.5rem"
+                ></i>
               </div>
 
+              <div>
+                <p class="label-lg">FACEBOOK</p>
+                <a
+                  href="https://facebook.com/ndanhx"
+                  target="_blank"
+                  class="body-lg"
+                  >Nguyen Duy Anh</a
+                >
+              </div>
             </li>
 
+            <li class="contact-item">
+              <div
+                class="item-icon"
+                style="
+                  background-color: hsl(220, 97%, 85%);
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fab fa-linkedin-in"
+                  aria-hidden="true"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+
+              <div>
+                <p class="label-lg">LINKEDIN</p>
+                <a
+                  href="https://linkedin.com/in/ndanhx"
+                  target="_blank"
+                  class="body-lg"
+                  >Duy Anh Nguyen</a
+                >
+              </div>
+            </li>
+
+            <li class="contact-item">
+              <div
+                class="item-icon"
+                style="
+                  background-color: hsl(0, 1%, 30%);
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <i
+                  class="fab fa-github"
+                  aria-hidden="true"
+                  style="font-size: 1.5rem"
+                ></i>
+              </div>
+
+              <div>
+                <p class="label-lg">GITHUB</p>
+                <a
+                  href="https://github.com/ndanhx"
+                  target="_blank"
+                  class="body-lg"
+                  >ndanhx</a
+                >
+              </div>
+            </li>
           </ul>
-
         </div>
-
       </div>
     </section>
-
   </article>
 </main>
