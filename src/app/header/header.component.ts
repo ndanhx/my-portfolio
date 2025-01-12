@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import {NgClass, NgOptimizedImage} from "@angular/common";
-import {IonicModule} from "@ionic/angular";
-import {RouterLink, RouterLinkActive} from "@angular/router";
+import { NgClass, NgOptimizedImage } from '@angular/common';
+import { IonicModule } from '@ionic/angular';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -12,19 +12,16 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
     IonicModule,
     NgOptimizedImage,
     RouterLinkActive,
-    RouterLink
+    RouterLink,
   ],
-  standalone: true
+  standalone: true,
 })
 export class HeaderComponent {
-
-  constructor() { }
+  constructor() {}
 
   //Sidebar toggle show hide function
   status = false;
-  addToggle()
-  {
+  addToggle() {
     this.status = !this.status;
   }
-
 }

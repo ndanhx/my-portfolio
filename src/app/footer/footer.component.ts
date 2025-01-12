@@ -1,19 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import {IonicModule} from "@ionic/angular";
+import { IonicModule } from '@ionic/angular';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
-  imports: [
-    IonicModule
-  ],
-  standalone: true
+  imports: [IonicModule],
+  standalone: true,
 })
-export class FooterComponent  implements OnInit {
+export class FooterComponent implements OnInit {
+  currentYear: any;
 
-  constructor() { }
+  constructor() {
+    this.currentYear = new Date().getFullYear();
+  }
 
   ngOnInit() {}
-
 }
